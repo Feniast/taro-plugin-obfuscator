@@ -1,7 +1,7 @@
 {
   "name": "taro-plugin-obfuscator",
   "version": "0.0.1",
-  "description": "",
+  "description": "obfuscator plugin for taro",
   "keywords": [
     "Taro",
     "Plugin"
@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Feniast/taro-plugin-obfuscator"
   },
   "scripts": {
     "build": "npm run clean && npm run prod",

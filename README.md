@@ -29,22 +29,25 @@ const config = {
 ```
 
 #### options
-Type: `Object` 
-Default: 
-```json
+
+Type: `Object`
+Default:
+
+```js
 {
-  optionsPreset: "low-obfuscation",
-  deadCodeInjection: false,
-  debugProtection: false, // required for mini-program
-  selfDefending: false, // required for mini-program
-  disableConsoleOutput: false, // required for mini-program
-  ignoreImports: true, // required for mini-program
+  "optionsPreset": "low-obfuscation",
+  "deadCodeInjection": false,
+  "debugProtection": false, // required for mini-program
+  "selfDefending": false, // required for mini-program
+  "disableConsoleOutput": false, // required for mini-program
+  "ignoreImports": true // required for mini-program
 }
 ```
 
 Options for [javascript-obfuscator](https://github.com/javascript-obfuscator/javascript-obfuscator). Should be passed exactly like described on their page.
 
 #### excludes
+
 Type: `Array` Default: `["taro.js", "runtime.js", "vendors.js"]`
 
 Bundle name is output file name after webpack compilation. With multiple webpack entries you can set bundle name in `output` object with aliases `[name]` or `[id]`.
@@ -52,3 +55,7 @@ Bundle name is output file name after webpack compilation. With multiple webpack
 Syntax for excludes array is syntax for [multimatch](https://github.com/sindresorhus/multimatch) package. You can see examples on package page.
 
 Few syntax examples: `['excluded_bundle_name.js', '**_bundle_name.js'] or 'excluded_bundle_name.js'`
+
+## Credits
+
+[Webpack Obfuscator](https://github.com/javascript-obfuscator/webpack-obfuscator/blob/master/package.json)
