@@ -1,0 +1,49 @@
+{
+  "name": "taro-plugin-obfuscator",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [
+    "Taro",
+    "Plugin"
+  ],
+  "author": "",
+  "homepage": "",
+  "license": "MIT",
+  "main": "index.js",
+  "typings": "types/index.d.ts",
+  "files": [
+    "dist",
+    "index.js",
+    "types"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "build": "npm run clean && npm run prod",
+    "dev": "tsc -w",
+    "prod": "tsc",
+    "clean": "rimraf dist"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "dependencies": {
+    "javascript-obfuscator": "^4.1.1",
+    "multi-stage-sourcemap": "^0.3.1",
+    "multimatch": "^5.0.0",
+    "source-map": "^0.7.4"
+  },
+  "devDependencies": {
+    "@tarojs/service": "^3.6.32",
+    "@types/node": "^18.13.0",
+    "rimraf": "^5.0.7",
+    "typescript": "^5.5.3",
+    "webpack": "^5",
+    "webpack-chain": "^6.5.1"
+  },
+  "peerDependencies": {
+    "webpack": "^5"
+  }
+}
